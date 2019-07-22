@@ -3,9 +3,9 @@ function takeANumber(line, name) {
   line.push(name)
   return `Welcome, ${name}. You are number ${number} in line.`
 }
+var number = 0
 function takeANumber(line) {
-  var number = line.length + 1
-  line.push(number)
+  line.push(++number)
   return `You have ticket number ${number}.`
 }
 function nowServing(line) {
